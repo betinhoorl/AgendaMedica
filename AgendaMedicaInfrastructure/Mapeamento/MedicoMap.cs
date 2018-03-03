@@ -1,10 +1,5 @@
 ﻿using AgendaMedicaDomain.Entidades;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AgendaMedicaInfrastructure.Mapeamento
 {
@@ -12,7 +7,18 @@ namespace AgendaMedicaInfrastructure.Mapeamento
     {
         public MedicoMap()
         {
+            HasKey(t => t.IdMedico);
 
+            Property(t => t.IdMedico).IsRequired();
+            Property(t => t.Nome).IsRequired().HasMaxLength(Medico.MaxLenghtMedico);
+            Property(t => t.Crm).IsRequired().HasMaxLength(Medico.MaxLenhgtlenghtCRM);
+
+            ToTable("Medico");
+            Property(t => t.IdMedico).HasColumnName("idMedico");
+            Property(t => t.Nome).HasColumnName("medico");
+            Property(t => t.Crm).HasColumnName("crm");
+
+            HasMany(t => t.Agendamentos);
         }
     }
 }

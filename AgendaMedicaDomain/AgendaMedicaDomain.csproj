@@ -40,9 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dto\UsuarioAutenticacaoDto.cs" />
+    <Compile Include="Dto\UsuarioDto.cs" />
     <Compile Include="Entidades\Agendamento.cs" />
     <Compile Include="Entidades\Medico.cs" />
     <Compile Include="Entidades\Paciente.cs" />
+    <Compile Include="Entidades\Token.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="ObjetoValor\Cpf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

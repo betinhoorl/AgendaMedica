@@ -4,6 +4,9 @@ namespace AgendaMedicaDomain.Entidades
 {
     public class Medico
     {
+        public const int MaxLenghtMedico = 45;
+        public const int MaxLenhgtlenghtCRM = 8;
+
         public int IdMedico { get; set; }
         public string Nome { get; set; }
         public string Crm { get; set; }

@@ -1,6 +1,5 @@
 ﻿using AgendaMedicaInfrastructure.Dao;
 using AgendaMedicaInfrastructure.Repositorio;
-using System;
 
 namespace AgendaMedicaInfrastructure.UnitOfWork
 {
@@ -64,7 +63,7 @@ namespace AgendaMedicaInfrastructure.UnitOfWork
 
         public void Commit()
         {
-            throw new NotImplementedException();
+            _contexto.SaveChanges();
         }
     }
 }

@@ -18,7 +18,8 @@ namespace AgendaMedicaInfrastructure.Dao
         public DbSet<Medico> MedicoDb { get; set; }
         public DbSet<Paciente> PacienteDb { get; set; }
         public DbSet<Usuario> UsuarioDb { get; set; }
-       
+        public DbSet<Token> TokenDb { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
@@ -29,6 +30,7 @@ namespace AgendaMedicaInfrastructure.Dao
             modelBuilder.Configurations.Add(new MedicoMap());
             modelBuilder.Configurations.Add(new PacienteMap());
             modelBuilder.Configurations.Add(new UsuarioMap());
+            modelBuilder.Configurations.Add(new TokenMap());
 
             base.OnModelCreating(modelBuilder);
         }

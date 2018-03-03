@@ -41,7 +41,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regras\GravacaoArquivosRegras.cs" />
+    <Compile Include="Regras\RegrasUsuario.cs" />
+    <Compile Include="Regras\TokenRegras.cs" />
+    <Compile Include="RouleFactory.cs" />
+    <Compile Include="Validacao\ValidarId.cs" />
+    <Compile Include="Validacao\ValidarSenha.cs" />
+    <Compile Include="Validacao\ValidarString.cs" />
+    <Compile Include="Validacao\ValidarToken.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgendaMedicaCommon\AgendaMedicaCommon.csproj">
+      <Project>{248ce819-8561-4dd2-97ed-f58c44a03b6e}</Project>
+      <Name>AgendaMedicaCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AgendaMedicaDomain\AgendaMedicaDomain.csproj">
+      <Project>{9312fb3e-9583-4021-a5ef-bcc52d25a2c8}</Project>
+      <Name>AgendaMedicaDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
