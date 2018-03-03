@@ -7,7 +7,7 @@ namespace AgendaMedicaCommon.Auxiliares
     {
         public static byte[] CriptografarSenha(string senha)
         {
-            return Criptografar(senha, "jeioors-swewgjgjikwxw-ewonwelsoja-9854");
+            return Criptografar(senha, "jeioors-swewgjgjikwxw-ewfabiomaza-4589");
         }
 
         public static byte[] Criptografar(string texto, string salt)

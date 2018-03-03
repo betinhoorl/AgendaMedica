@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Agendamento.cs" />
+    <Compile Include="Entidades\Medico.cs" />
+    <Compile Include="Entidades\Paciente.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="ObjetoValor\Cpf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AgendaMedicaCommon\AgendaMedicaCommon.csproj">
+      <Project>{248ce819-8561-4dd2-97ed-f58c44a03b6e}</Project>
+      <Name>AgendaMedicaCommon</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

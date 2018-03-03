@@ -43,6 +43,7 @@
     <Compile Include="Auxiliares\Criptografia.cs" />
     <Compile Include="Auxiliares\Guard.cs" />
     <Compile Include="Auxiliares\StringValueAttribute.cs" />
+    <Compile Include="Auxiliares\TextoHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
