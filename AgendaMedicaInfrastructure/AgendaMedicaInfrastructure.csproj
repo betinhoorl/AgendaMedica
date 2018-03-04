@@ -53,6 +53,7 @@
     <Compile Include="Mapeamento\AgendamentoMap.cs" />
     <Compile Include="Mapeamento\MedicoMap.cs" />
     <Compile Include="Mapeamento\PacienteMap.cs" />
+    <Compile Include="Mapeamento\SessaoMap.cs" />
     <Compile Include="Mapeamento\TokenMap.cs" />
     <Compile Include="Mapeamento\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,10 +62,12 @@
     <Compile Include="Repositorio\MedicoRepositorio.cs" />
     <Compile Include="Repositorio\PacienteRepositorio.cs" />
     <Compile Include="Repositorio\Generico\Repositorio.cs" />
+    <Compile Include="Repositorio\SessaoRepositorio.cs" />
     <Compile Include="Repositorio\TokenRepositorio.cs" />
     <Compile Include="Repositorio\UsuarioRepositorio.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWorkAgenda.cs" />
+    <Compile Include="UnitOfWork\UnitOfWorkControleAcesso.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

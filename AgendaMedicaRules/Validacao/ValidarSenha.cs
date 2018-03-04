@@ -1,4 +1,5 @@
 ﻿using AgendaMedicaCommon.Auxiliares;
+using AgendaMedicaDomain.Entidades;
 
 namespace AgendaMedicaRules.Validacao
 {
@@ -9,7 +10,7 @@ namespace AgendaMedicaRules.Validacao
         public byte[] SetSenha(string senha)
         {
             Guard.ForNullOrEmptyDefaultMessage(senha, "Senha");
-            Guard.StringLength("Senha", senha, 6, 20);
+            Guard.StringLength("Senha", senha, Usuario.SenhaMinLength, Usuario.SenhaMaxLength);
             return Criptografia.CriptografarSenha(senha);
         }
 
@@ -17,7 +18,7 @@ namespace AgendaMedicaRules.Validacao
         {
             Guard.ForNullOrEmptyDefaultMessage(senha, "Senha");
             Guard.ForNullOrEmptyDefaultMessage(senhaConfirmacao, "Confirma Senha");
-            Guard.StringLength("Senha", senha, 6, 20);
+            Guard.StringLength("Senha", senha, Usuario.SenhaMinLength, Usuario.SenhaMaxLength);
             Guard.AreEqual(senha, senhaConfirmacao, "Senhas não conferem");
             return Criptografia.CriptografarSenha(senha);
         }

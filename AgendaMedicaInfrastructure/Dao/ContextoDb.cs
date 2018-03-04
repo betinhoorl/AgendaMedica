@@ -19,6 +19,8 @@ namespace AgendaMedicaInfrastructure.Dao
         public DbSet<Paciente> PacienteDb { get; set; }
         public DbSet<Usuario> UsuarioDb { get; set; }
         public DbSet<Token> TokenDb { get; set; }
+        public DbSet<Sessao> SessaoDb { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -31,6 +33,7 @@ namespace AgendaMedicaInfrastructure.Dao
             modelBuilder.Configurations.Add(new PacienteMap());
             modelBuilder.Configurations.Add(new UsuarioMap());
             modelBuilder.Configurations.Add(new TokenMap());
+            modelBuilder.Configurations.Add(new SessaoMap());
 
             base.OnModelCreating(modelBuilder);
         }

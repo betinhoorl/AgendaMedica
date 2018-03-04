@@ -10,15 +10,13 @@ namespace AgendaMedicaInfrastructure.Mapeamento
             HasKey(t => t.IdAgendamento);
 
             Property(t => t.IdAgendamento).IsRequired();
-            Property(t => t.Hora).IsRequired();
-            Property(t => t.Data).IsRequired();
+            Property(t => t.DataHora).IsRequired();
             Property(t => t.IdMedico).IsRequired();
             Property(t => t.IdPaciente).IsRequired();
 
             ToTable("Agendamento");
             Property(t => t.IdAgendamento).HasColumnName("idAgendamento");
-            Property(t => t.Hora).HasColumnName("hora");
-            Property(t => t.Data).HasColumnName("data");
+            Property(t => t.DataHora).HasColumnName("dataHora");
             Property(t => t.IdMedico).HasColumnName("idMedico");
             Property(t => t.IdPaciente).HasColumnName("idPaciente");
 

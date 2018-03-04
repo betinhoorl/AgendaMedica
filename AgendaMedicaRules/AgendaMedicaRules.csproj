@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,10 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regras\AgendamentoRegras.cs" />
+    <Compile Include="Regras\GerenciarCookieRegras.cs" />
     <Compile Include="Regras\GravacaoArquivosRegras.cs" />
-    <Compile Include="Regras\RegrasUsuario.cs" />
+    <Compile Include="Regras\MedicoRegras.cs" />
+    <Compile Include="Regras\PacienteRegras.cs" />
+    <Compile Include="Regras\SessaoRegras.cs" />
+    <Compile Include="Regras\UsuarioRegras.cs" />
     <Compile Include="Regras\TokenRegras.cs" />
     <Compile Include="RouleFactory.cs" />
+    <Compile Include="Validacao\ValidarDataHora.cs" />
     <Compile Include="Validacao\ValidarId.cs" />
     <Compile Include="Validacao\ValidarSenha.cs" />
     <Compile Include="Validacao\ValidarString.cs" />

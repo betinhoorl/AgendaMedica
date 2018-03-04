@@ -5,9 +5,9 @@ using System;
 
 namespace AgendaMedicaRules.Regras
 {
-    public class RegrasUsuario : RouleFactory<RegrasUsuario>
+    public class UsuarioRegras : RouleFactory<UsuarioRegras>
     {
-        public RegrasUsuario() {}
+        public UsuarioRegras() {}
 
         public UsuarioAutenticacaoDto AutenticarUsuario(UsuarioAutenticacaoDto dto)
         {

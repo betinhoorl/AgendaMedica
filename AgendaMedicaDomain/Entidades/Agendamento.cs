@@ -5,8 +5,7 @@ namespace AgendaMedicaDomain.Entidades
     public class Agendamento
     {
         public int IdAgendamento { get; set; }
-        public DateTime Hora { get; set; }
-        public DateTime Data { get; set; }
+        public DateTime DataHora { get; set; }
         public int IdPaciente { get; set; }
         public int IdMedico { get; set; }
 

@@ -9,7 +9,6 @@ namespace AgendaMedicaInfrastructure.UnitOfWork
         private AgendamentoRepositorio _agendamento;
         private MedicoRepositorio _medico;
         private PacienteRepositorio _paciente;
-        private UsuarioRepositorio _usuario;
 
         public UnitOfWorkAgenda(ContextoDb contexto)
         {
@@ -47,17 +46,6 @@ namespace AgendaMedicaInfrastructure.UnitOfWork
                     _paciente = new PacienteRepositorio(_contexto);
                 }
                 return _paciente;
-            }
-        }
-        public UsuarioRepositorio UsuarioRepositorio
-        {
-            get
-            {
-                if (_usuario == null)
-                {
-                    _usuario = new UsuarioRepositorio(_contexto);
-                }
-                return _usuario;
             }
         }
 
