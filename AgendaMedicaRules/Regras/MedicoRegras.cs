@@ -27,5 +27,9 @@ namespace AgendaMedicaRules.Regras
             };
         }
 
+        public int Delete(int idMedico)
+        {
+            return ValidarId.CreateInstance.SetId("Código Médico", idMedico);
+        }
     }
 }

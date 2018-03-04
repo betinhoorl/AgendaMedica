@@ -27,5 +27,10 @@ namespace AgendaMedicaRules.Regras
                 Cpf = new Cpf(dto.Cpf)
             };
         }
+
+        public int Delete(int idPaciente)
+        {
+            return ValidarId.CreateInstance.SetId("Código Paciente", idPaciente);
+        }
     }
 }

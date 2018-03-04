@@ -29,5 +29,9 @@ namespace AgendaMedicaRules.Regras
             };
         }
 
+        public int Delete(int idAgendamento)
+        {
+            return ValidarId.CreateInstance.SetId("Código Agendamento", idAgendamento);
+        }
     }
 }
