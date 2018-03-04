@@ -8,7 +8,7 @@ namespace AgendaMedicaInfrastructure.Dao
     public class ContextoDb : DbContext
     {
         public ContextoDb()
-            : base("ConnStrgMeuClube")
+            : base("ConnStrgAgendaMedico")
         {
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;

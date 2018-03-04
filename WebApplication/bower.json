@@ -1,0 +1,16 @@
+{
+  "name": "Agenda Medica",
+  "main": "index.js",
+  "homepage": "https://github.com/betinhoorl/AgendaMedica",
+  "authors": [
+    "Roberto Timoteo da Silva <betinhoorl@live.com>"
+  ],
+  "description": "Agenda Medica Mazzatech",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "angularjs#^1.6.9",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^5.0.8",
+    "jquery": "^3.3.1"
+  }
+}

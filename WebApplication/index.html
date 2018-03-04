@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Agenda Medica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="libs/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+    <script src="libs/angular/ui-bootstrap.min.js"></script>
+    <script src="libs/angular/ui-bootstrap-tpls.min.js"></script>
+
+    <!--referências-->
+    <link href="index.css" rel="stylesheet" />
+    <script src="App/app.module.js"></script>
+    <script src="App/app.routes.js"></script>
+
+    <!--controllers-->
+    <script src="index.js"></script>
+    <script src="App/ControleAcesso/Autenticacao/login.js"></script>
+
+</head>
+<body>
+    <nav class="nav-extended navbar-fixed escondeMenu" id="menuPrincipal">
+        <div class="container-box-nav">
+            <img class="img-position" src="" />
+            <label class="titulo-label">Mazzatech Med</label>
+
+            <ul class="right " ng-controller="index">
+                <li><a ng-click="Cadastro()"><span class="amber-text"><i class="fa fa-pencil-square-o"></i></span>&nbsp;Cadastro </a></li>
+            </ul>
+        </div>
+        <div class="red darken-2">
+            <div class="nav-content container-box-nav">
+                <!--MENU DE CADASTRO-->
+                <div class="row escondeMenu" id="menuCadastro">
+                    <!--Paciente-->
+                    <div class="col-sm-1 row container-menu-icon">
+                        <a href="#/clienteBusca">
+                            <span class="amber-text"><i class="fa fa-users fa-2x"></i></span>
+                        </a>
+                        <br />
+                        <a href="">
+                            <p class="plus-menu"><i class="fa fa-plus"></i>&nbsp;Cad. Paciente</p>
+                        </a>
+                    </div>
+                    <!--Médico-->
+                    <div class="col-sm-1 row container-menu-icon">
+                        <a href="#/produtoBusca">
+                            <span class="amber-text"><i class="fa fa-beer fa-2x"></i></span>
+                        </a>
+                        <br />
+                        <a href="#/produtoIncluir">
+                            <p class="plus-menu"><i class="fa fa-plus"></i>&nbsp;Cad. Médico</p>
+                        </a>
+                    </div>
+                    <!--Usuario-->
+                    <div class="col-sm-1 row container-menu-icon">
+                        <a href="#/adicionalBusca">
+                            <span class="amber-text"><i class="fa fa-plus-square fa-2x"></i></span>
+                        </a>
+                        <br />
+                        <a href="#/adicionalIncluir">
+                            <p class="plus-menu"><i class="fa fa-plus"></i>&nbsp;Cad. Usuário</p>
+                        </a>
+                    </div>
+                    <!--Agendamento-->
+                    <div class="col-sm-1 row container-menu-icon">
+                        <a href="#/gridCategoria">
+                            <span class="amber-text"><i class="fa fa-sitemap fa-2x"></i></span>
+                        </a>
+                        <br />
+                        <a href="#/addCategoria">
+                            <p class="plus-menu"><i class="fa fa-plus"></i>&nbsp;Cad. Agendamentos</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div style="margin-left: 20px; margin-right:20px; margin-top: 155px">
+            <!--Injeção de Páginas-->
+            <div ng-view></div>
+        </div>
+    </main>
+
+    <script src="libs/jquery/jquery-3.2.0.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

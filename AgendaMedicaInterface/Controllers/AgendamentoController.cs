@@ -22,7 +22,7 @@ namespace AgendaMedicaInterface.Controllers
         [Route("GetAllAgendamentos")]
         public HttpResponseMessage GetAllAgendamentos()
         {
-            var response = _uow.AgendamentoRepositorio.GetAll();
+            var response = _uow.AgendamentoRepositorio.GetAllAgendamentos();
             return Request.CreateResponse(HttpStatusCode.OK, response);
         }
 

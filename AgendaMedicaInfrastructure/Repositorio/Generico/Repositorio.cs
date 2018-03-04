@@ -16,12 +16,12 @@ namespace AgendaMedicaInfrastructure.Repositorio.Generico
 
         public IQueryable<TEntity> GetAll()
         {
-            return _contexto.Set<TEntity>();
+            return _contexto.Set<TEntity>().AsNoTracking();
         }
 
         public IQueryable<TEntity> Get(Func<TEntity, bool> predicate)
         {
-            return GetAll().Where(predicate).AsQueryable();
+            return GetAll().AsNoTracking().Where(predicate).AsQueryable();
         }
 
         public TEntity Find(params object[] key)
