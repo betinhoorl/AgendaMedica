@@ -13,9 +13,9 @@ namespace AgendaMedicaRules.Regras
         {
             return new UsuarioAutenticacaoDto
             {
-                UsuarioLogin = ValidarString.CreateInstance.SetString(dto.UsuarioLogin, "Usuário"),
+                Login = ValidarString.CreateInstance.SetString(dto.Login, "Usuário"),
                 SenhaCriptografada = ValidarSenha.CreateInstance.SetSenha(dto.Senha),
-                TokenAtual = new Guid(GravacaoArquivosRegras.CreateInstance.RecuperarTokenUsuario(dto.UsuarioLogin)),
+                TokenAtual = new Guid(GravacaoArquivosRegras.CreateInstance.RecuperarTokenUsuario(dto.Login)),
                 NovoToken = TokenRegras.CreateInstance.GerarNovoToken()
             };
         }

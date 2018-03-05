@@ -2,11 +2,15 @@
     'use strict';
     angular.module('app').controller('index', function ($scope, $location, $http) {
         $scope.Cadastro = function () {
-            $("#menuMedico").addClass("escondeMenu");
-            $("#menuPaciente").addClass("escondeMenu");
-            $("#menuUsuario").addClass("escondeMenu");
-            $("#menuAgendamento").removeClass("escondeMenu");
-            $location.path('/pessoaBusca');
+            $("#menuAtendimento").addClass("escondeMenu");
+            $("#menuCadastro").removeClass("escondeMenu");
+            $location.path('/pacienteBusca');
+        };
+
+        $scope.Atendimento = function () {
+            $("#menuCadastro").addClass("escondeMenu");
+            $("#menuAtendimento").removeClass("escondeMenu");
+            $location.path('/balcaoAtendimento')
         };
 
         $location.path('/login');

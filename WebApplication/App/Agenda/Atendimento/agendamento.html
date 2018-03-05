@@ -1,0 +1,64 @@
+﻿<div class="form-Container">
+    <!--BreadCrumb-->
+    <ul class="breadcrumbcss">
+        <li><a>Cadastro</a></li>
+        <li><a>Agendar Horário</a></li>
+    </ul>
+
+    <h1>Agendar Horário</h1>
+
+    <div class="well">
+        <div class="row">
+            <div class="col-sm-8">
+                <!--Paciente-->
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <select class="form-control" aria-required="true" ng-model="agendamentoDto.idPaciente" ng-options="value.IdPaciente as value.Nome for value in PacienteDto">
+                            <option value="">Paciente</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <!--Médico-->
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <select class="form-control" aria-required="true" ng-model="agendamentoDto.idMedico" ng-options="value.IdMedico as value.Nome for value in MedicoDto">
+                            <option value="">Médico</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="col-sm-12">
+                    <input id="date" type="date" ng-model="agendamentoDto.data">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="col-sm-12">
+                    <input type="time" name="hora" ng-model="agendamentoDto.hora" max="17:30:00" min="10:00:00" step="1">
+                </div>
+            </div>
+        </div>
+
+      
+    
+
+     
+
+        <div class="row">
+            <hr>
+            <div class="col-md-3 col-md-offset-9">
+                <div class="button-right">
+                    <button class="btn btn-default navbar-btn" type="button" ng-click="cancelar()"><i class="fa fa-ban"></i>&nbsp;&nbsp;Cancelar</button>
+                    <button class="btn btn-default navbar-btn" type="button" ng-click="salvar()"><i class="fa fa-floppy-o"></i>&nbsp;&nbsp;Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

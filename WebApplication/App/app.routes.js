@@ -1,4 +1,4 @@
-﻿/// <reference path="ControleAcesso/Autenticacao/login.html" />
+﻿/// <reference path="Agenda/Atendimento/agendamento.html" />
 (function () {
 
     'use strict';
@@ -20,12 +20,35 @@
             templateUrl: 'App/ControleAcesso/Autenticacao/login.html',
             controller: 'login'
         })
-        .when("/usuario", {
-            templateUrl: 'App/ControleAcesso/Usuario/usuario.html',
-            controller: 'usuario'
+        .when("/novoUsuario", {
+            templateUrl: 'App/ControleAcesso/Usuario/novoUsuario.html',
+            controller: 'novoUsuario'
+        })
+        .when("/balcaoAtendimento", {
+            templateUrl: 'App/Agenda/Atendimento/balcaoAtendimento.html',
+            controller: 'balcaoAtendimento'
+        })
+        .when("/medicoBusca", {
+            templateUrl: 'App/Agenda/Cadastro/medicoBusca.html',
+            controller: 'medicoBusca'
+        })
+        .when("/medico", {
+            templateUrl: 'App/Agenda/Cadastro/medico.html',
+            controller: 'medico'
+        })
+        .when("/pacienteBusca", {
+            templateUrl: 'App/Agenda/Cadastro/pacienteBusca.html',
+            controller: 'pacienteBusca'
+        })
+        .when("/paciente", {
+            templateUrl: 'App/Agenda/Cadastro/paciente.html',
+            controller: 'paciente'
+        })
+        .when("/agendamento", {
+            templateUrl: 'App/Agenda/Atendimento/agendamento.html',
+            controller: 'agendamento'
         })
 
-        // caso não seja nenhum desses, redirecione para a rota '/'
         .otherwise({ redirectTo: '/login' });
     });
 

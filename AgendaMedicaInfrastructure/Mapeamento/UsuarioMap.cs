@@ -10,8 +10,8 @@ namespace AgendaMedicaInfrastructure.Mapeamento
             HasKey(t => t.IdUsuario);
 
             Property(t => t.IdUsuario).IsRequired();
-            Property(t => t.Login).IsRequired().HasMaxLength(Usuario.LoginMaxLength);
-            Property(t => t.Senha).IsRequired().HasMaxLength(Usuario.SenhaMaxLength);
+            Property(t => t.Login).IsRequired();
+            Property(t => t.Senha).IsRequired();
             Property(t => t.Ativo).IsRequired();
 
             ToTable("Usuario");

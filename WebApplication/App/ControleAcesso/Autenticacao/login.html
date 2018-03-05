@@ -1,5 +1,6 @@
 ﻿<div class="form-Container" style="background:#fafafa; margin-top: -145px">
-    
+    <!--Alerta-->
+    <ui-alert message="{{message}}" type="{{type}}"></ui-alert>
     <center>
         <h4>Teste Full Stack - Mazzatech</h4>
         <h5>Agendamento para consultório médito</h5>
@@ -12,7 +13,7 @@
                 <input type="text" class="form-control" ng-model="usuarioDto.Login" placeholder="Usuário" />
             </div>
             <div class="col-sm-12">
-                <input type="text" class="form-control" ng-model="usuarioDto.senha" placeholder="Senha" />
+                <input type="password" class="form-control" ng-model="usuarioDto.senha" placeholder="Senha" />
             </div>
             <div class="col-sm-12">
                 <button class="btn navbar-btn" type="button" ng-click="entrar()" style="width:100%; background:#5e0f12; color:#fff; font-weight:700;"><i class="fa fa-sign-in white-text"></i>&nbsp; Entrar</button>

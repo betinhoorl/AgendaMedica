@@ -83,11 +83,28 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Agenda\agenda.service.js" />
+    <Content Include="App\Agenda\Atendimento\agendamento.html" />
+    <Content Include="App\Agenda\Atendimento\agendamento.js" />
+    <Content Include="App\Agenda\Atendimento\balcaoAtendimento.html" />
+    <Content Include="App\Agenda\Atendimento\balcaoAtendimento.js" />
+    <Content Include="App\Agenda\Cadastro\medico.html" />
+    <Content Include="App\Agenda\Cadastro\medico.js" />
+    <Content Include="App\Agenda\Cadastro\medicoBusca.html" />
+    <Content Include="App\Agenda\Cadastro\medicoBusca.js" />
+    <Content Include="App\Agenda\Cadastro\paciente.html" />
+    <Content Include="App\Agenda\Cadastro\paciente.js" />
+    <Content Include="App\Agenda\Cadastro\pacienteBusca.html" />
+    <Content Include="App\Agenda\Cadastro\pacienteBusca.js" />
     <Content Include="App\app.module.js" />
     <Content Include="App\app.routes.js" />
     <Content Include="App\ControleAcesso\controleAcesso.service.js" />
     <Content Include="App\ControleAcesso\Autenticacao\login.html" />
     <Content Include="App\ControleAcesso\Autenticacao\login.js" />
+    <Content Include="App\ControleAcesso\Usuario\novoUsuario.html" />
+    <Content Include="App\ControleAcesso\Usuario\novoUsuario.js" />
+    <Content Include="App\Diretivas\Alert\uiAlert.html" />
+    <Content Include="App\Diretivas\Alert\uiAlert.js" />
     <Content Include="images\logoMazztech160x160.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />
@@ -107,10 +124,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App\Agenda\" />
-    <Folder Include="App\ControleAcesso\Usuario\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

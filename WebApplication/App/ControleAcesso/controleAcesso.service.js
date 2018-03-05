@@ -2,8 +2,8 @@
     "user strict";
 
     var service = angular.module('app');
-    service.factory('controleAcessoService', function ($http, appConfig) {
-        var constantRoute = appConfig.Meuclube_Api_Localhost + '/';
+    service.factory('controleAcessoService', function ($http) {
+        var constantRoute = 'http://localhost:51530/';
 
         /*Autenticar Usuário*/
         var _autenticar = function (usuario) {

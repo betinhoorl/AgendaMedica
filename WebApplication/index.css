@@ -496,7 +496,8 @@ nav > div > ul > li {
 .nav-content {
     position: relative;
     line-height: normal;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 180px;
 }
 
 .nav-extended .nav-wrapper {
@@ -552,7 +553,7 @@ nav > div > ul > li:hover {
 }
 
 .red.darken-2 {
-    background-color: #D32F2F !important;
+    background-color: #a51a21  !important;
 }
 
 .radio .cr {

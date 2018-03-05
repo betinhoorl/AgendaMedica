@@ -4,7 +4,7 @@ namespace AgendaMedicaDomain.Dto
 {
     public class UsuarioAutenticacaoDto
     {
-        public string UsuarioLogin { get; set; }
+        public string Login { get; set; }
         public string Senha { get; set; }
         public byte[] SenhaCriptografada { get; set; }
         public Guid TokenAtual { get; set; }

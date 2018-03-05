@@ -1,0 +1,43 @@
+﻿<div class="form-Container">
+    <!--BreadCrumb-->
+    <ul class="breadcrumbcss">
+        <li><a>Cadastro</a></li>
+        <li><a>Balcão Atendimento</a></li>
+    </ul>
+
+    <h1>Balcão Atendimento</h1>
+    <div class="well">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr class="tabela-backcolor-red">
+                        <th>Paciente</th>
+                        <th>Médico</th>
+                        <th>Data | Hora</th>
+                        <th width="70">Ações</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="agendamento in agendamentos">
+                    <tr>
+                        <td>{{agendamento.Paciente.Nome}}</td>
+                        <td>{{agendamento.Medico.Nome}}</td>
+                        <td>{{agendamento.DataHora}}</td>
+                        <td>
+                            <a href=""><i class="fa fa-times red-text" style="margin-left: 5px"></i></a>
+                            <a ng-click="Editar(agendamento)"><i class="fa fa-pencil-square-o red-text" style="margin-left: 5px"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    input.empty {
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+    }
+</style>

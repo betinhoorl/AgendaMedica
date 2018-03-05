@@ -19,7 +19,7 @@ namespace AgendaMedicaInfrastructure.Repositorio
         public Usuario AutenticaUsuario(UsuarioAutenticacaoDto dto)
         {
             var usuarioAutenticado = _contexto.UsuarioDb.Where(usuario =>
-                usuario.Login == dto.UsuarioLogin &&
+                usuario.Login == dto.Login &&
                 usuario.Senha == dto.SenhaCriptografada &&
                 usuario.Ativo).FirstOrDefault();
 
